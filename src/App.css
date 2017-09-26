@@ -1,0 +1,117 @@
+.App {
+  text-align: center;
+  color: #fff;
+}
+
+.App-header {
+  padding: 20px;
+}
+
+.col-xs-8r,
+.col-sm-8r,
+.col-md-8r,
+.col-lg-8r {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.col-xs-8r {
+  width: 12.5%;
+  float: left;
+}
+
+.weather .weather-header {
+  margin-top: 20px;
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+.weather .weather-item {
+  height: 100px;
+  background-color: #fff;
+  color: #756565;
+  margin-left: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.weather .weather-item div:first-child {
+  padding-bottom: 10px;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+/* Extra Small Devices, Phones */ 
+@media (max-width: 480px) {
+  .weather-row {
+    margin: 0;
+  }
+  .weather .weather-item {
+    margin-left: 0 !important;
+  }
+}
+
+/* Small Devices, Tablets */
+@media (max-width: 768px) {
+    
+  .col-sm-8r {
+    width: 10%;
+    float: left;
+  }
+
+  .weather .weather-header {
+    text-align: center !important;
+  }
+
+  .weather .weather-item {
+    height: inherit !important;
+    display: flex;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    margin-bottom: 2px !important;
+  }
+
+  .weather .weather-row div:first-child {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  .weather .weather-row div:last-child {
+    border-bottom-left-radius: 5px !important;
+    border-bottom-right-radius: 5px !important;
+  }
+
+  .weather .weather-item div:first-child {
+    width: 50%;
+    text-align: left;
+    padding: 5px 0 0 5px !important;
+    
+  }
+  .weather .weather-item div:last-child {
+    width: 50%;
+    text-align: right;
+    padding: 5px 0 0 5px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-md-8r {
+    width: 10%;
+    float: left;
+  }
+  .weather .weather-item {
+    border-radius: 5px;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .col-lg-8r {
+    width: 12.5%;
+    float: left;
+  }
+}
+
+
